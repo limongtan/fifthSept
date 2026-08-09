@@ -1,11 +1,409 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hans">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>fifthSept</title>
+<title>LPI 财富行为诊断课 × The Decision Edge | 2026年9月5日</title>
+<meta name="description" content="一天，两场 Workshop。上午华语场：解码你的财务DNA。下午英语场：The Decision Edge。Behavioural Finance × 心理学 × Leonard Personality Inventory。CO3 Coworking Space。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0C1119;--ink-2:#111827;--panel:#151E2C;--panel-2:#1B2637;
+    --line:rgba(201,169,106,.18);--gold:#C9A96A;--gold-bright:#E4C88A;
+    --cream:#F3EEE4;--slate:#8B96A8;--coral:#C87A6B;--helix:rgba(201,169,106,.5);
+    --maxw:1080px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--ink);color:var(--cream);font-family:"Noto Sans SC",system-ui,sans-serif;font-weight:300;line-height:1.75;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  h1,h2,h3{font-family:"Noto Serif SC",serif;font-weight:700;line-height:1.35;letter-spacing:-.01em}
+  .mono{font-family:"IBM Plex Mono",monospace;letter-spacing:.04em}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  a{color:inherit;text-decoration:none}
+  .eyebrow{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);display:inline-block;margin-bottom:20px}
+  .btn{display:inline-flex;align-items:center;gap:10px;background:var(--gold);color:#12100A;font-family:"Noto Sans SC",sans-serif;font-weight:700;padding:15px 30px;border-radius:2px;font-size:16px;transition:transform .2s ease,box-shadow .2s ease,background .2s ease;box-shadow:0 8px 30px rgba(201,169,106,.22)}
+  .btn:hover{transform:translateY(-2px);background:var(--gold-bright);box-shadow:0 12px 40px rgba(201,169,106,.35)}
+  .btn-ghost{background:transparent;color:var(--cream);border:1px solid var(--line);box-shadow:none}
+  .btn-ghost:hover{background:rgba(201,169,106,.08);border-color:var(--gold)}
+  header.bar{position:sticky;top:0;z-index:50;background:rgba(12,17,25,.86);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+  .bar .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .bar .brand{font-family:"IBM Plex Mono",monospace;font-size:13px;letter-spacing:.12em;color:var(--slate)}
+  .bar .brand b{color:var(--cream)}
+  .bar .btn{padding:10px 22px;font-size:14px}
+  @media(max-width:640px){.bar .brand{display:none}}
+  .hero{position:relative;padding:96px 0 80px;overflow:hidden}
+  .hero .wrap{position:relative;z-index:2}
+  .hero .kick{color:var(--coral);font-family:"IBM Plex Mono",monospace;font-size:13px;letter-spacing:.18em;margin-bottom:18px}
+  .hero h1{font-size:clamp(2.1rem,5.4vw,4rem);font-weight:900;max-width:16ch}
+  .hero h1 em{font-style:normal;color:var(--gold)}
+  .hero .sub{font-size:clamp(1.05rem,2vw,1.3rem);color:#D8D2C6;font-weight:300;margin:26px 0 8px;max-width:36ch;line-height:1.6}
+  .hero .sub b{color:var(--gold-bright);font-weight:500}
+  .chips{display:flex;flex-wrap:wrap;gap:12px;margin:34px 0 36px}
+  .chip{font-family:"IBM Plex Mono",monospace;font-size:13px;border:1px solid var(--line);border-radius:2px;padding:9px 15px;color:#CDD3DE;display:flex;align-items:center;gap:8px}
+  .chip .dot{width:6px;height:6px;border-radius:50%;background:var(--gold)}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+  .hero-cta .note{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--slate)}
+  .helix{position:absolute;right:-40px;top:0;bottom:0;width:340px;z-index:1;opacity:.9;pointer-events:none}
+  @media(max-width:900px){.helix{opacity:.14;right:-120px}}
+  .glow{position:absolute;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(201,169,106,.16),transparent 62%);top:-160px;right:-120px;z-index:0;filter:blur(6px)}
+  section{padding:74px 0;position:relative}
+  .section-lead{max-width:60ch}
+  h2.title{font-size:clamp(1.6rem,3.6vw,2.5rem);font-weight:700}
+  h2.title em{font-style:normal;color:var(--gold)}
+  .diag{background:var(--ink-2)}
+  .symptom-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:38px}
+  @media(max-width:680px){.symptom-grid{grid-template-columns:1fr}}
+  .symptom{background:var(--ink-2);padding:26px 24px;display:flex;gap:16px;align-items:flex-start}
+  .symptom .x{color:var(--coral);font-family:"IBM Plex Mono",monospace;font-weight:600;flex:none;margin-top:2px}
+  .symptom p{font-size:15px;color:#D2D6DE}
+  .learn-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:40px}
+  @media(max-width:680px){.learn-grid{grid-template-columns:1fr}}
+  .learn{background:var(--panel);border:1px solid var(--line);border-radius:3px;padding:22px;display:flex;gap:14px;align-items:flex-start;transition:border-color .25s,transform .25s}
+  .learn:hover{border-color:var(--gold);transform:translateY(-3px)}
+  .learn .n{font-family:"IBM Plex Mono",monospace;color:var(--gold);font-size:13px;flex:none;margin-top:3px}
+  .learn p{font-size:15px;color:#DCDFE6}
+  .sessions{background:var(--ink-2)}
+  .sess{display:grid;grid-template-columns:190px 1fr;border:1px solid var(--line);border-radius:4px;overflow:hidden;margin-top:26px}
+  @media(max-width:680px){.sess{grid-template-columns:1fr}}
+  .sess .time{background:var(--panel-2);padding:30px 26px;border-right:1px solid var(--line)}
+  @media(max-width:680px){.sess .time{border-right:none;border-bottom:1px solid var(--line)}}
+  .sess .time .lbl{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.2em;color:var(--gold);text-transform:uppercase}
+  .sess .time .hrs{font-family:"IBM Plex Mono",monospace;font-size:19px;color:var(--cream);margin-top:8px;line-height:1.4}
+  .sess .time .lang{display:inline-block;margin-top:14px;font-family:"IBM Plex Mono",monospace;font-size:11px;color:#12100A;background:var(--gold);padding:3px 9px;border-radius:2px;letter-spacing:.05em}
+  .sess .body{padding:30px}
+  .sess .body h3{font-size:1.25rem;margin-bottom:10px}
+  .sess .body p{font-size:15px;color:#CBD0D9}
+  .sess .trainer{margin-top:16px;font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--slate)}
+  .sess .trainer b{color:var(--gold-bright);font-weight:500}
+  .mini-learn{margin-top:16px;display:flex;flex-wrap:wrap;gap:8px}
+  .mini-learn span{font-size:12.5px;color:#BFC5D0;border:1px solid var(--line);border-radius:20px;padding:5px 12px}
+  .inc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:40px}
+  @media(max-width:820px){.inc-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:520px){.inc-grid{grid-template-columns:1fr}}
+  .inc{background:var(--panel);border:1px solid var(--line);border-radius:3px;padding:24px 22px}
+  .inc .ico{font-size:22px;margin-bottom:12px}
+  .inc h4{font-family:"Noto Sans SC";font-weight:700;font-size:15px;margin-bottom:6px;color:var(--cream)}
+  .inc p{font-size:13.5px;color:var(--slate);line-height:1.6}
+  .inc .tag{display:inline-block;margin-top:10px;font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--gold);border:1px solid var(--line);padding:3px 8px;border-radius:2px}
+  .speakers{background:var(--ink-2)}
+  .spk-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}
+  @media(max-width:860px){.spk-grid{grid-template-columns:1fr 1fr}}
+  @media(max-width:600px){.spk-grid{grid-template-columns:1fr}}
+  .spk{background:linear-gradient(160deg,var(--panel-2),var(--panel));border:1px solid var(--line);border-radius:4px;padding:28px 26px}
+  .spk .role{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+  .spk h3{font-size:1.35rem;margin-bottom:4px}
+  .spk .en{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--slate);margin-bottom:16px}
+  .spk ul{list-style:none;display:flex;flex-direction:column;gap:8px}
+  .spk li{font-size:13.5px;color:#CFD4DD;padding-left:16px;position:relative;line-height:1.5}
+  .spk li::before{content:"—";position:absolute;left:0;color:var(--gold)}
+  .aud-list{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+  .aud{border:1px solid var(--line);border-radius:40px;padding:10px 20px;font-size:14px;color:#DCDFE6}
+  .aud b{color:var(--gold-bright);font-weight:500}
+  .pricing{background:var(--ink-2)}
+  .price-grid{display:grid;grid-template-columns:1fr 1fr 1.1fr;gap:16px;margin-top:42px;align-items:stretch}
+  @media(max-width:860px){.price-grid{grid-template-columns:1fr}}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:5px;padding:30px 28px;position:relative;display:flex;flex-direction:column}
+  .card.feature{border-color:var(--gold);background:linear-gradient(165deg,var(--panel-2),#141d2b)}
+  .card .best{position:absolute;top:-12px;right:24px;background:var(--gold);color:#12100A;font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:600;letter-spacing:.1em;padding:5px 12px;border-radius:2px}
+  .card .plan{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--slate)}
+  .card .plan-name{font-family:"Noto Serif SC";font-weight:700;font-size:1.25rem;margin:6px 0 4px}
+  .card .plan-note{font-size:12.5px;color:var(--slate);margin-bottom:18px;min-height:18px}
+  .card .eb-label{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--coral);letter-spacing:.1em;text-transform:uppercase;margin-bottom:4px}
+  .card .price-row{display:flex;align-items:baseline;gap:12px}
+  .card .amt{font-family:"IBM Plex Mono",monospace;font-size:2.3rem;font-weight:600;color:var(--cream);line-height:1}
+  .card .amt .cur{font-size:1rem;color:var(--gold);vertical-align:top}
+  .card .was{font-family:"IBM Plex Mono",monospace;font-size:14px;color:var(--slate);text-decoration:line-through}
+  .card .after{font-size:12.5px;color:var(--slate);margin-top:12px;font-family:"IBM Plex Mono",monospace}
+  .card ul{list-style:none;margin:18px 0 22px;display:flex;flex-direction:column;gap:9px;flex:1}
+  .card li{font-size:13.5px;color:#D6DAE2;padding-left:22px;position:relative}
+  .card li::before{content:"✓";position:absolute;left:0;color:var(--gold);font-weight:700}
+  .card .btn{width:100%;justify-content:center}
+  .value-strip{text-align:center;margin-top:36px;font-family:"IBM Plex Mono",monospace;font-size:14px;color:var(--slate)}
+  .value-strip b{color:var(--gold-bright)}
+  .deadline{display:inline-flex;align-items:center;gap:10px;background:rgba(200,122,107,.1);border:1px solid rgba(200,122,107,.35);color:#E4B5AB;font-family:"IBM Plex Mono",monospace;font-size:13px;padding:9px 16px;border-radius:3px;margin-top:26px}
+  .info-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:38px;border-radius:4px;overflow:hidden}
+  @media(max-width:600px){.info-grid{grid-template-columns:1fr}}
+  .info{background:var(--ink);padding:22px 24px}
+  .info .k{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+  .info .v{font-size:15px;color:#E4E7EC}
+  .final{text-align:center;padding:90px 0}
+  .final h2{font-size:clamp(1.8rem,4vw,2.8rem);max-width:20ch;margin:0 auto 16px}
+  .final p{color:#CBD0D9;max-width:46ch;margin:0 auto 34px;font-size:1.05rem}
+  footer{border-top:1px solid var(--line);padding:44px 0;color:var(--slate);font-size:13px}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;align-items:center}
+  footer .mono{font-size:12px}
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+</style>
 </head>
 <body>
-<h1>fifthSept</h1>
+
+<header class="bar">
+  <div class="wrap">
+    <div class="brand"><b>LPI</b>://财富行为诊断课 × The Decision Edge</div>
+    <a href="#register" class="btn">立即报名 Register</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="glow"></div>
+  <svg class="helix" viewBox="0 0 200 800" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><g stroke="var(--helix)" stroke-width="1.4" fill="none"><path id="s1" d=""/></g></svg>
+  <div class="wrap">
+    <div class="kick reveal">💰 为什么聪明人，也会一直做错决定？ Why do smart people still make poor decisions?</div>
+    <h1 class="reveal">解码你的<em>财务 DNA</em><br>掌握你的<em>决策优势</em></h1>
+    <p class="sub reveal">一天，两场 Workshop。<b>先认识自己，再做对每一个决定。</b></p>
+    <div class="chips reveal">
+      <span class="chip"><span class="dot"></span>2026年9月5日 · 星期六</span>
+      <span class="chip"><span class="dot"></span>CO3 Coworking Space</span>
+      <span class="chip"><span class="dot"></span>华语场 + English Session</span>
+    </div>
+    <div class="hero-cta reveal">
+      <a href="#register" class="btn">锁定早鸟席位 →</a>
+      <span class="note">早鸟价截止 · 8月23日</span>
+    </div>
+  </div>
+</section>
+
+<section class="diag">
+  <div class="wrap">
+    <span class="eyebrow reveal">你的症状 / The Symptoms</span>
+    <h2 class="title section-lead reveal">懂很多知识，<br>却总在最关键的时候做错决定？</h2>
+    <div class="symptom-grid reveal">
+      <div class="symptom"><span class="x">✕</span><p>市场一跌，就恐慌卖出（Panic Selling）</p></div>
+      <div class="symptom"><span class="x">✕</span><p>看见别人赚钱，就忍不住追高（FOMO）</p></div>
+      <div class="symptom"><span class="x">✕</span><p>一直研究，却迟迟不敢开始（Analysis Paralysis）</p></div>
+      <div class="symptom"><span class="x">✕</span><p>压力一来，判断就乱了套（Poor judgement under pressure）</p></div>
+    </div>
+    <p class="sub section-lead reveal" style="margin-top:34px;max-width:54ch;font-size:1.05rem;color:#D8D2C6">
+      在 AI 时代，知识随处可得——但<b style="color:var(--gold-bright)">清晰的判断力</b>，正成为最稀有、最有价值的竞争优势。问题不在于你不够聪明，而在于你的<b style="color:var(--gold-bright)">行为模式 (Financial DNA)</b> 正默默影响每一个决定。
+    </p>
+  </div>
+</section>
+
+<section class="sessions">
+  <div class="wrap">
+    <span class="eyebrow reveal">当日流程 / The Day</span>
+    <h2 class="title reveal">一天，<em>两场 Workshop</em></h2>
+    <p class="sub section-lead reveal" style="max-width:50ch;font-size:1rem;color:#CBD0D9">上午华语场、下午英语场，可任选其一，或选择「双场」全日体验，获得最完整的诊断。</p>
+
+    <div class="sess reveal">
+      <div class="time">
+        <div class="lbl">Session 1 · 上午</div>
+        <div class="hrs">9:30 AM<br>– 12:30 PM</div>
+        <span class="lang">华语进行</span>
+      </div>
+      <div class="body">
+        <h3>解码你的财务DNA：LPI 财富行为诊断课</h3>
+        <p>结合 Behavioural Finance × 心理学 × Leonard Personality Inventory (LPI)，看见你为何在错误的时间买入、跌市就睡不好、别人赚钱时开始怀疑自己。真正成功的投资，不是复制别人——而是先认识自己。</p>
+        <div class="trainer">主讲导师 · <b>Andy Tan</b> — 天使投资人 · HRD Corp 认证培训师 · LPI 认证顾问</div>
+      </div>
+    </div>
+
+    <div class="sess reveal">
+      <div class="time">
+        <div class="lbl">Session 2 · 下午</div>
+        <div class="hrs">2:00 PM<br>– 5:00 PM</div>
+        <span class="lang">In English</span>
+      </div>
+      <div class="body">
+        <h3>🧠 The Decision Edge</h3>
+        <p>Stay calm, think clearly, and make better decisions when it matters most. Discover how Leadership Psychology, First-Principles Thinking, Behavioural Science and the LPI help you understand how you think, uncover your blind spots, and decide with confidence.</p>
+        <div class="mini-learn">
+          <span>Think clearly under pressure</span>
+          <span>Spot cognitive biases</span>
+          <span>Decide with confidence</span>
+          <span>Communicate across personality styles</span>
+          <span>Know your leadership style</span>
+        </div>
+        <div class="trainer">Trainer · <b>Lou Zong Yuan</b> — Certified LPI Consultant · Leadership Assessment Specialist · HRD Corp Accredited Trainer</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="eyebrow reveal">课程包含 / What Every Participant Receives</span>
+    <h2 class="title reveal">你带走的，<em>远不止一堂课</em></h2>
+    <div class="inc-grid reveal">
+      <div class="inc"><div class="ico">🧠</div><h4>官方 LPI 人格测评</h4><p>Leonard Personality Inventory 正式测试。<span class="tag">价值 RM350</span></p></div>
+      <div class="inc"><div class="ico">📄</div><h4>专属 12 页 LPI 分析报告</h4><p>Personalised 12-Page LPI Personality Report。</p></div>
+      <div class="inc"><div class="ico">⚙️</div><h4>Aurelion LPI Analytics Engine</h4><p>独家 LPI 分析引擎专属使用权限。</p></div>
+      <div class="inc"><div class="ico">💚</div><h4>3 小时实体 Workshop</h4><p>现场沉浸式学习与互动。</p></div>
+      <div class="inc"><div class="ico">🧭</div><h4>Decision / Investment Framework</h4><p>可落地的决策与投资框架。</p></div>
+      <div class="inc"><div class="ico">🎤</div><h4>Live Q&A</h4><p>与认证 LPI 顾问及嘉宾面对面提问。</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="speakers">
+  <div class="wrap">
+    <span class="eyebrow reveal">主讲阵容 / The Speakers</span>
+    <h2 class="title reveal">向<em>实战者</em>学习</h2>
+    <div class="spk-grid reveal">
+      <div class="spk">
+        <div class="role">上午 · 华语场导师</div>
+        <h3>Andy Tan</h3>
+        <div class="en">Angel Investor · EduTech Entrepreneur</div>
+        <ul>
+          <li>天使投资人 · 教育科技创业者</li>
+          <li>HRD Corp 认证培训师</li>
+          <li>LPI 认证顾问</li>
+          <li>行为金融学 × 组织心理学 × 第一性原理投资</li>
+        </ul>
+      </div>
+      <div class="spk">
+        <div class="role">下午 · English Trainer</div>
+        <h3>Lou Zong Yuan</h3>
+        <div class="en">Leadership Assessment Specialist</div>
+        <ul>
+          <li>Certified LPI Consultant</li>
+          <li>Leadership Assessment Specialist</li>
+          <li>HRD Corp Accredited Trainer</li>
+        </ul>
+      </div>
+      <div class="spk">
+        <div class="role">特邀嘉宾 · Special Guest（两场）</div>
+        <h3>Zhi Wang</h3>
+        <div class="en">Ex U.S. Tech VP · Ex-Monk (17 yrs)</div>
+        <ul>
+          <li>美国科技公司前副总裁</li>
+          <li>出家修行 17 年的美国前僧侣</li>
+          <li>EduTech 创业者 & LPI 顾问</li>
+          <li>财富创造 × 勇气 × 韧性幸福</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="eyebrow reveal">适合谁 / Who It's For</span>
+    <h2 class="title reveal">如果你想<em>做对关键决定</em></h2>
+    <div class="aud-list reveal">
+      <span class="aud">企业老板 <b>Business Owners</b></span>
+      <span class="aud">企业管理层 <b>Managers</b></span>
+      <span class="aud">HR / 人才负责人 <b>People Leaders</b></span>
+      <span class="aud">企业高管 <b>Executives</b></span>
+      <span class="aud">专业人士 <b>Professionals</b></span>
+      <span class="aud">想更了解自己的人</span>
+    </div>
+  </div>
+</section>
+
+<section class="pricing" id="register">
+  <div class="wrap">
+    <span class="eyebrow reveal">报名 / Register</span>
+    <h2 class="title reveal">选择你的<em>席位</em></h2>
+    <div class="deadline reveal">⏳ 早鸟价截止 8月23日 · 报名截止 9月1日</div>
+
+    <div class="price-grid reveal">
+      <div class="card">
+        <div class="plan">上午 · 华语场</div>
+        <div class="plan-name">财务 DNA 诊断课</div>
+        <div class="plan-note">9:30 AM – 12:30 PM</div>
+        <div class="eb-label">早鸟价 Early Bird</div>
+        <div class="price-row"><div class="amt"><span class="cur">RM</span>188</div><div class="was">RM258</div></div>
+        <ul>
+          <li>3 小时实体 Workshop（华语）</li>
+          <li>官方 LPI 测评 + 12 页报告</li>
+          <li>Aurelion LPI Analytics Engine</li>
+          <li>现场互动 Q&A</li>
+        </ul>
+        <div class="after">8月23日后 · RM258</div>
+        <a href="#contact" class="btn btn-ghost" style="margin-top:18px">选择上午场</a>
+      </div>
+
+      <div class="card">
+        <div class="plan">Afternoon · English</div>
+        <div class="plan-name">The Decision Edge</div>
+        <div class="plan-note">2:00 PM – 5:00 PM</div>
+        <div class="eb-label">早鸟价 Early Bird</div>
+        <div class="price-row"><div class="amt"><span class="cur">RM</span>188</div><div class="was">RM258</div></div>
+        <ul>
+          <li>3-hour Workshop (English)</li>
+          <li>Official LPI Assessment + 12-page report</li>
+          <li>Aurelion LPI Analytics Engine</li>
+          <li>Live Q&A with LPI Consultants</li>
+        </ul>
+        <div class="after">After 23 Aug · RM258</div>
+        <a href="#contact" class="btn btn-ghost" style="margin-top:18px">Choose Afternoon</a>
+      </div>
+
+      <div class="card feature">
+        <span class="best">最超值 · BEST VALUE</span>
+        <div class="plan">双场 + 午餐 · Full Day</div>
+        <div class="plan-name">全日双场 + 午餐</div>
+        <div class="plan-note">上午华语 + 下午英语</div>
+        <div class="eb-label">早鸟价 Early Bird</div>
+        <div class="price-row"><div class="amt"><span class="cur">RM</span>388</div><div class="was">RM488</div></div>
+        <ul>
+          <li>两场 Workshop（华语 + English）</li>
+          <li>含午餐 · Lunch Included</li>
+          <li>官方 LPI 测评 + 12 页报告</li>
+          <li>完整 Financial DNA + Decision Edge 体验</li>
+          <li>现场互动 Q&A</li>
+        </ul>
+        <div class="after">8月23日后 · RM488</div>
+        <a href="#contact" class="btn" style="margin-top:18px">锁定全日席位</a>
+      </div>
+    </div>
+    <div class="value-strip reveal">课程内容总价值 <b>RM888</b> · 含 LPI 官方测评 RM350</div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="eyebrow reveal">活动详情 / Event Details</span>
+    <h2 class="title reveal">时间 · 地点 · <em>报名</em></h2>
+    <div class="info-grid reveal">
+      <div class="info"><div class="k">日期 Date</div><div class="v">2026年9月5日 星期六 · Sat, 5 Sep 2026</div></div>
+      <div class="info"><div class="k">地点 Venue</div><div class="v">CO3 Coworking Space（实体 Face-to-Face）</div></div>
+      <div class="info"><div class="k">线上 LPI 测评 Online Assessment</div><div class="v">2026年9月2日 · 8:30 PM（Zoom）</div></div>
+      <div class="info"><div class="k">报名截止 Registration Closes</div><div class="v">2026年9月1日 · 1 Sep 2026</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="final" id="contact">
+  <div class="wrap reveal">
+    <h2>先<span style="color:var(--gold)">认识自己</span>，<br>再做对每一个决定。</h2>
+    <p>名额有限，早鸟价将于 8月23日 截止，报名 9月1日 截止。立即联系 Aurelion 团队锁定席位。</p>
+    <div class="hero-cta" style="justify-content:center">
+      <a href="https://wa.me/601110541499?text=你好，我想报名 5/9 的课程（LPI 财富行为诊断课 / The Decision Edge）" class="btn">📲 WhatsApp 报名 · 011-1054 1499</a>
+      <a href="#" class="btn btn-ghost">填写报名表格 Register Form</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <div style="color:var(--cream);font-family:'Noto Serif SC';font-weight:700;margin-bottom:6px">LPI 财富行为诊断课 × The Decision Edge</div>
+      <div class="mono">Sat, 5 Sep 2026 · CO3 Coworking Space</div>
+    </div>
+    <div class="mono">Aurelion Team · 011-1054 1499 · Andy Tan · Lou Zong Yuan · Zhi Wang</div>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var path=document.getElementById('s1');if(!path)return;
+    var g=path.parentNode,amp=52,mid=100,steps=800;
+    function strand(phase){var d='';for(var y=0;y<=steps;y+=8){var x=mid+amp*Math.sin((y/steps)*Math.PI*7+phase);d+=(y===0?'M':'L')+x.toFixed(1)+' '+y+' ';}return d;}
+    var p1=document.createElementNS('http://www.w3.org/2000/svg','path'),p2=document.createElementNS('http://www.w3.org/2000/svg','path');
+    p1.setAttribute('d',strand(0));p1.setAttribute('stroke','var(--helix)');p1.setAttribute('fill','none');p1.setAttribute('stroke-width','1.4');
+    p2.setAttribute('d',strand(Math.PI));p2.setAttribute('stroke','var(--helix)');p2.setAttribute('fill','none');p2.setAttribute('stroke-width','1.4');
+    g.appendChild(p1);g.appendChild(p2);
+    for(var y=20;y<=steps;y+=40){var x1=mid+amp*Math.sin((y/steps)*Math.PI*7),x2=mid+amp*Math.sin((y/steps)*Math.PI*7+Math.PI);var r=document.createElementNS('http://www.w3.org/2000/svg','line');r.setAttribute('x1',x1.toFixed(1));r.setAttribute('y1',y);r.setAttribute('x2',x2.toFixed(1));r.setAttribute('y2',y);r.setAttribute('stroke','rgba(201,169,106,.22)');r.setAttribute('stroke-width','1');g.appendChild(r);}
+    path.remove();
+  })();
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+</script>
 </body>
 </html>
