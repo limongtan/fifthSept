@@ -104,22 +104,20 @@
   .pricing{background:var(--ink-2)}
   .price-grid{display:grid;grid-template-columns:1fr 1fr 1.1fr;gap:16px;margin-top:42px;align-items:stretch}
   @media(max-width:860px){.price-grid{grid-template-columns:1fr}}
-  .card{background:var(--panel);border:1px solid var(--line);border-radius:5px;padding:30px 28px;position:relative;display:flex;flex-direction:column}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:30px 28px;position:relative;display:flex;flex-direction:column}
   .card.feature{border-color:var(--gold);background:linear-gradient(165deg,var(--panel-2),#141d2b)}
-  .card .best{position:absolute;top:-12px;right:24px;background:var(--gold);color:#12100A;font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:600;letter-spacing:.1em;padding:5px 12px;border-radius:2px}
-  .card .plan{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--slate)}
-  .card .plan-name{font-family:"Noto Serif SC";font-weight:700;font-size:1.25rem;margin:6px 0 4px}
-  .card .plan-note{font-size:12.5px;color:var(--slate);margin-bottom:18px;min-height:18px}
-  .card .eb-label{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--coral);letter-spacing:.1em;text-transform:uppercase;margin-bottom:4px}
-  .card .price-row{display:flex;align-items:baseline;gap:12px}
-  .card .amt{font-family:"IBM Plex Mono",monospace;font-size:2.3rem;font-weight:600;color:var(--cream);line-height:1}
-  .card .amt .cur{font-size:1rem;color:var(--gold);vertical-align:top}
-  .card .was{font-family:"IBM Plex Mono",monospace;font-size:14px;color:var(--slate);text-decoration:line-through}
-  .card .after{font-size:12.5px;color:var(--slate);margin-top:12px;font-family:"IBM Plex Mono",monospace}
-  .card ul{list-style:none;margin:18px 0 22px;display:flex;flex-direction:column;gap:9px;flex:1}
-  .card li{font-size:13.5px;color:#D6DAE2;padding-left:22px;position:relative}
-  .card li::before{content:"✓";position:absolute;left:0;color:var(--gold);font-weight:700}
-  .card .btn{width:100%;justify-content:center}
+  .card .best{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--gold);color:#12100A;font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:600;letter-spacing:.1em;padding:5px 14px;border-radius:20px;white-space:nowrap}
+  .card .plan{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.08em;color:var(--gold)}
+  .card .plan-name{font-family:"Noto Serif SC";font-weight:700;font-size:1.35rem;margin:8px 0 20px;color:var(--cream)}
+  .card .price-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+  .card .amt{font-family:"IBM Plex Mono",monospace;font-size:2.6rem;font-weight:600;color:var(--cream);line-height:1}
+  .card .amt .cur{font-size:1rem;vertical-align:top}
+  .card .eb-tag{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--coral);border:1px solid var(--coral);padding:3px 10px;border-radius:20px;letter-spacing:.05em}
+  .card .orig{font-size:13px;color:var(--slate);margin-top:8px;font-family:"IBM Plex Mono",monospace}
+  .card .perk{display:flex;align-items:center;gap:8px;margin-top:16px;font-size:14px;color:var(--gold-bright);flex:1}
+  .card .perk::before{content:"✓";color:var(--gold);font-weight:700}
+  .card .btn{width:100%;justify-content:center;border-radius:30px;margin-top:20px}
+  .card .btn-ghost{border-radius:30px}
   .value-strip{text-align:center;margin-top:36px;font-family:"IBM Plex Mono",monospace;font-size:14px;color:var(--slate)}
   .value-strip b{color:var(--gold-bright)}
   .deadline{display:inline-flex;align-items:center;gap:10px;background:rgba(200,122,107,.1);border:1px solid rgba(200,122,107,.35);color:#E4B5AB;font-family:"IBM Plex Mono",monospace;font-size:13px;padding:9px 16px;border-radius:3px;margin-top:26px}
@@ -303,56 +301,33 @@
 
     <div class="price-grid reveal">
       <div class="card">
-        <div class="plan">上午 · 华语场</div>
-        <div class="plan-name">财务 DNA 诊断课</div>
-        <div class="plan-note">9:30 AM – 12:30 PM</div>
-        <div class="eb-label">早鸟价 Early Bird</div>
-        <div class="price-row"><div class="amt"><span class="cur">RM</span>188</div><div class="was">RM258</div></div>
-        <ul>
-          <li>3 小时实体 Workshop（华语）</li>
-          <li>官方 LPI 测评 + 12 页报告</li>
-          <li>Aurelion LPI Analytics Engine</li>
-          <li>现场互动 Q&A</li>
-        </ul>
-        <div class="after">8月23日后 · RM258</div>
-        <a href="#contact" class="btn btn-ghost" style="margin-top:18px">选择上午场</a>
+        <div class="plan">上午场 · 中文</div>
+        <div class="plan-name">财务DNA</div>
+        <div class="price-row"><div class="amt"><span class="cur">RM</span>48</div><span class="eb-tag">早鸟价</span></div>
+        <div class="orig">RM88 原价 / 人</div>
+        <div class="perk">含茶歇</div>
+        <a href="#contact" class="btn btn-ghost">立即报名 ↗</a>
       </div>
 
       <div class="card">
-        <div class="plan">Afternoon · English</div>
+        <div class="plan">下午场 · 英文</div>
         <div class="plan-name">The Decision Edge</div>
-        <div class="plan-note">2:00 PM – 5:00 PM</div>
-        <div class="eb-label">早鸟价 Early Bird</div>
-        <div class="price-row"><div class="amt"><span class="cur">RM</span>188</div><div class="was">RM258</div></div>
-        <ul>
-          <li>3-hour Workshop (English)</li>
-          <li>Official LPI Assessment + 12-page report</li>
-          <li>Aurelion LPI Analytics Engine</li>
-          <li>Live Q&A with LPI Consultants</li>
-        </ul>
-        <div class="after">After 23 Aug · RM258</div>
-        <a href="#contact" class="btn btn-ghost" style="margin-top:18px">Choose Afternoon</a>
+        <div class="price-row"><div class="amt"><span class="cur">RM</span>48</div><span class="eb-tag">早鸟价</span></div>
+        <div class="orig">RM88 原价 / 人</div>
+        <div class="perk">含茶歇</div>
+        <a href="#contact" class="btn btn-ghost">立即报名 ↗</a>
       </div>
 
       <div class="card feature">
-        <span class="best">最超值 · BEST VALUE</span>
-        <div class="plan">双场 + 午餐 · Full Day</div>
-        <div class="plan-name">全日双场 + 午餐</div>
-        <div class="plan-note">上午华语 + 下午英语</div>
-        <div class="eb-label">早鸟价 Early Bird</div>
-        <div class="price-row"><div class="amt"><span class="cur">RM</span>388</div><div class="was">RM488</div></div>
-        <ul>
-          <li>两场 Workshop（华语 + English）</li>
-          <li>含午餐 · Lunch Included</li>
-          <li>官方 LPI 测评 + 12 页报告</li>
-          <li>完整 Financial DNA + Decision Edge 体验</li>
-          <li>现场互动 Q&A</li>
-        </ul>
-        <div class="after">8月23日后 · RM488</div>
-        <a href="#contact" class="btn" style="margin-top:18px">锁定全日席位</a>
+        <span class="best">最超值</span>
+        <div class="plan">中文 + 英文</div>
+        <div class="plan-name">全日 · 两场</div>
+        <div class="price-row"><div class="amt"><span class="cur">RM</span>88</div><span class="eb-tag">早鸟价</span></div>
+        <div class="orig">RM176 原价 / 人</div>
+        <div class="perk">含午餐与茶歇</div>
+        <a href="#contact" class="btn">立即报名 ↗</a>
       </div>
     </div>
-    <div class="value-strip reveal">课程内容总价值 <b>RM888</b> · 含 LPI 官方测评 RM350</div>
   </div>
 </section>
 
